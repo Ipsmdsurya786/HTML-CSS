@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Five Color Changes</title>
+    <style>
+      /* Base styles for the color changer */
+      .color-changer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+      }
+
+      .color-label {
+        width: 40px;
+        height: 40px;
+        border: 2px solid #333;
+        cursor: pointer;
+        border-radius: 50%;
+        transition: transform 0.3s;
+      }
+
+      .color-radio {
+        display: none;
+      }
+
+      /* Color options */
+      .color1 {
+        background-color: lightblue;
+      }
+      .color2 {
+        background-color: lightcoral;
+      }
+      .color3 {
+        background-color: lightgreen;
+      }
+      .color4 {
+        background-color: lightgoldenrodyellow;
+      }
+      .color5 {
+        background-color: lightpink;
+      }
+
+      /* Display the initial color */
+      .color-box {
+        width: 100px;
+        height: 100px;
+        background-color: lightblue; /* Default color */
+        border: 2px solid #333;
+        transition: background-color 0.3s;
+      }
+
+      /* Change color based on selected radio button */
+      #color1:checked ~ .color-box {
+        background-color: lightblue;
+      }
+      #color2:checked ~ .color-box {
+        background-color: lightcoral;
+      }
+      #color3:checked ~ .color-box {
+        background-color: lightgreen;
+      }
+      #color4:checked ~ .color-box {
+        background-color: lightgoldenrodyellow;
+      }
+      #color5:checked ~ .color-box {
+        background-color: lightpink;
+      }
+
+      /* Optional: Add a slight scale effect to labels on hover */
+      .color-label:hover {
+        transform: scale(1.1);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="color-changer">
+      <input
+        type="radio"
+        id="color1"
+        name="color"
+        class="color-radio"
+        checked
+      />
+      <label for="color1" class="color-label color1"></label>
+
+      <input type="radio" id="color2" name="color" class="color-radio" />
+      <label for="color2" class="color-label color2"></label>
+
+      <input type="radio" id="color3" name="color" class="color-radio" />
+      <label for="color3" class="color-label color3"></label>
+
+      <input type="radio" id="color4" name="color" class="color-radio" />
+      <label for="color4" class="color-label color4"></label>
+
+      <input type="radio" id="color5" name="color" class="color-radio" />
+      <label for="color5" class="color-label color5"></label>
+
+      <div class="color-box"></div>
+    </div>
+  </body>
+</html>

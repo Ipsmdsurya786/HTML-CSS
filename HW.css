@@ -1,0 +1,165 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    height: 1300px;
+    
+
+.container {
+    position: absolute;
+    left: 20%;
+    border: 2px solid black;
+    height: 1000px;
+    width: 800px;
+    background-image: url(bg1.jpg);
+    background-size: cover;
+}
+
+.nameBox {
+    border: 5px double blue;
+    border-radius: 10px;
+    /* background-color: rgb(96, 63, 229); */
+    height: 50px;
+    width: 400px;
+    position: absolute;
+    text-align: center;
+    top: 20px;
+    left: 190px;
+    color: white;
+}
+
+.contentBox {
+    border: none;
+    border-radius: 15px;
+    height: 300px;
+    width: 600px;
+    position: absolute;
+    top: 160px;
+    left: 90px;
+    padding: 10px;
+    background-image: url(bg2.jpg);
+    background-size: cover;
+}
+.contentBox p{
+    font-size: 16px;
+    font-weight: 650;
+    color: white;
+}
+
+
+.photo {
+    border: 2px solid black;
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    position: sticky;
+    top: 15px;
+    left: 15px;
+    background-image: url(photo.jpg);
+    background-size: cover;
+}
+
+.imgbox {
+    border: none;
+    height: 200px;
+    width: 100px;
+}
+
+.imgbox {
+    display: flex;
+    /* padding-top: 55px; */
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    height: 600px;
+    width: 800px;
+    position: absolute;
+    top: 50%;
+    background-image: url(bg3.jpg);
+    align-content: space-evenly;
+}
+
+.box1 {
+    border: 2px solid black;
+    height: 190px;
+    width: 180px;
+    background-image: url(usb.jpg);
+    background-size: cover;
+}
+
+.box2 {
+    border: 2px solid black;
+    height: 190px;
+    width: 180px;
+    background-image: url(mouse.jpg);
+    background-size: cover;
+}
+
+.box3 {
+    border: 2px solid black;
+    height: 190px;
+    width: 180px;
+    background-image: url(pd.jpg);
+    background-size: cover;
+}
+
+.box4 {
+    border: 2px solid black;
+    height: 190px;
+    width: 180px;
+    background-image: url(activa.jpg);
+    background-size: cover;
+}
+.box5 {
+    border: 2px solid black;
+    height: 190px;
+    width: 180px;
+    background-image: url(usb.jpg);
+    background-size: cover;
+}
+
+.box6 {
+    border: 2px solid black;
+    height: 190px;
+    width: 180px;
+    background-image: url(mouse.jpg);
+    background-size: cover;
+}
+
+.box7 {
+    border: 2px solid black;
+    height: 190px;
+    width: 180px;
+    background-image: url(pd.jpg);
+    background-size: cover;
+}
+
+.box8 {
+    border: 2px solid black;
+    height: 190px;
+    width: 180px;
+    background-image: url(activa.jpg);
+    background-size: cover;
+}
+
+.copyright {
+    position: fixed;
+    padding: 15px;
+    bottom: 0px;
+    background-color: #232F3E;
+    width: 800px;
+    text-align: center;
+    color: white;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+}
+
+p {
+    font-size: 18px;
+}

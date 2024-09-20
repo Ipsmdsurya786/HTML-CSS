@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Color Change on Click</title>
+    <style>
+      /* Hide the checkbox */
+      .color-toggle {
+        display: none;
+      }
+
+      /* Style for the label */
+      .color-changer {
+        width: 100px;
+        height: 100px;
+        background-color: red;
+        cursor: pointer;
+        transition: background-color 1s;
+      }
+
+      /* Animation on checked state */
+      .color-toggle:checked + .color-changer {
+        background-color: red;
+        animation: colorChange 10s infinite;
+      }
+
+      /* Keyframes for color changes */
+      @keyframes colorChange {
+        0% {
+          background-color: red;
+        }
+        20% {
+          background-color: orange;
+        }
+        40% {
+          background-color: yellow;
+        }
+        60% {
+          background-color: green;
+        }
+        80% {
+          background-color: blue;
+        }
+        100% {
+          background-color: violet;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <input type="checkbox" id="colorToggle" class="color-toggle" />
+    <label for="colorToggle" class="color-changer"></label>
+  </body>
+</html>

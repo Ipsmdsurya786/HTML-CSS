@@ -1,0 +1,31 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body{
+    background-color: aqua;
+    font-family: Arial, Helvetica, sans-serif;
+}
+fieldset{
+    margin-left: 20%;
+    margin-right: 20%;
+    margin-top: 1%;
+    margin-bottom: 5%;
+    padding: 20px;
+    background-color:white;
+}
+img{
+    height: 100px;
+    width: 100px;
+    border-radius: 100%;
+    position:absolute;
+    top: 60px;
+    left: 65%;
+}
+.nam{
+    position: absolute;
+    top: 170px;
+    left: 65%;
+    text-align: center;
+}

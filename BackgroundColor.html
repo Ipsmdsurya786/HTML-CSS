@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Background Color</title>
+    <style>
+      * {
+        margin: 0px;
+        padding: 0px;
+        box-sizing: border-box;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+      .navbar {
+        /* border: 1px solid black; */
+        box-shadow: 0px -50px 50px 20px;
+      }
+      li {
+        font-size: 20px;
+        font-weight: 600;
+      }
+      a {
+        text-decoration: none;
+      }
+      a:hover {
+        color: darkgoldenrod;
+        font-size: 25px;
+        transition-duration: 0.5s;
+      }
+      ul {
+        display: flex;
+        justify-content: space-evenly;
+        padding: 20px;
+      }
+      .color_Flipper {
+        color: rgb(23, 199, 199);
+        font-weight: 800;
+        font-style: oblique;
+        list-style-type: none;
+      }
+      .color_Flipper:hover {
+        text-shadow: 2px 2px 3px #ffb700;
+        font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+          "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+        font-weight: 1000;
+      }
+      .main {
+        border: 2px solid black;
+        height: 550px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+      }
+      .bgc {
+        border: 2px solid black;
+        padding: 15px;
+        color: white;
+        background-color: black;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: 1000;
+        font-size: 30px;
+        span {
+          color: rgb(17, 122, 241);
+        } */
+      }
+
+      button {
+        margin-top: 20px;
+        padding: 10px 20px;
+        border: none;
+        background-color: darkkhaki;
+        font-size: 20px;
+        font-weight: 600;
+      }
+      button:hover {
+        background-color: aqua;
+        text-shadow: 2px 2px 3px #ffb700;
+        font-size: 25px;
+        border-radius: 10px;
+        transition-duration: 0.5s;
+        transform: scale(.9);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="navbar">
+      <ul>
+        <li class="color_Flipper">Color Flipper</li>
+        <li><a href="#">Simple</a></li>
+        <li><a href="#">Hex</a></li>
+      </ul>
+    </div>
+    <div class="main">
+      <div class="bgc">Background Color : <span>#F1f5f8</span></div>
+
+      <button><a href="#" .>Click Me</a></button>
+    </div>
+  </body>
+</html>
